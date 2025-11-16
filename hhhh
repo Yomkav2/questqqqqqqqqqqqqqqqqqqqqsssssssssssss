@@ -1161,7 +1161,7 @@ local Levels = {
         LowestLevel = 2475,
         MaxLevel = 2500
 	},
-    Sun-kissed_Warrior = {
+    Sun_kissed_Warrior = {
         Enemy = "Sun-kissed Warrior",
         LowestLevel = 2500,
         MaxLevel = 2525
