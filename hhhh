@@ -1150,6 +1150,66 @@ local Levels = {
         Enemy = "Snow Demon",
         LowestLevel = 2425,
         MaxLevel = 2450
+    },
+    Isle_Outlaw = {
+        Enemy = "Isle Outlaw",
+        LowestLevel = 2450,
+        MaxLevel = 2475
+    },
+    Island_Boy = {
+        Enemy = "Island Boy",
+        LowestLevel = 2475,
+        MaxLevel = 2500
+	},
+    Sun-kissed_Warrior = {
+        Enemy = "Sun-kissed Warrior",
+        LowestLevel = 2500,
+        MaxLevel = 2525
+    },
+    Isle_Champion = {
+        Enemy = "Isle Champion",
+        LowestLevel = 2525,
+        MaxLevel = 2550
+    },
+    Serpent_Hunter = {
+        Enemy = "Serpent Hunter",
+        LowestLevel = 2550,
+        MaxLevel = 2575
+    },
+    Skull_Slayer = {
+        Enemy = "Skull Slayer",
+        LowestLevel = 2575,
+        MaxLevel = 2600
+    },
+    Reef_Bandit = {
+        Enemy = "Reef Bandit",
+        LowestLevel = 2600,
+        MaxLevel = 2625
+    },
+    Coral_Pirate = {
+        Enemy = "Coral Pirate",
+        LowestLevel = 2625,
+        MaxLevel = 2650
+    },
+    Sea_Chanter = {
+        Enemy = "Sea Chanter",
+        LowestLevel = 2650,
+        MaxLevel = 2675
+    },
+    Ocean_Prophet = {
+        Enemy = "Ocean Prophet",
+        LowestLevel = 2675,
+        MaxLevel = 2700
+    },
+    High_Disciple = {
+        Enemy = "High Disciple",
+        LowestLevel = 2700,
+        MaxLevel = 2725
+    },
+    Grand_Devotee = {
+        Enemy = "Grand Devotee",
+        LowestLevel = 2725,
+        MaxLevel = 2800
     }
 }
 
