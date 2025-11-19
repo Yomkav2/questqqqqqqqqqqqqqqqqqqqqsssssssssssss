@@ -1,3 +1,4 @@
+-- yomka made it
 local QuestsData = {QuestsNames, Quests}
 
 local Quests = {
@@ -460,7 +461,7 @@ local Quests = {
         QuestName = "PiratePortQuest",
         EnemyName = "Pirate Millionaire",
         LevelQuest = 1,
-        CFramePos = CFrame.new(-290.074677, 42.9034653, 5581.58984, 0.965929627, -0, -0.258804798, 0, 1, -0, 0.258804798, 0, 0.965929627),
+        CFramePos = CFrame.new(-448.63, 108.59, 5950.81),
         QuestGiver = "",
         World = 3
     },
@@ -469,7 +470,7 @@ local Quests = {
         QuestName = "PiratePortQuest",
         EnemyName = "Pistol Billionaire",
         LevelQuest = 2,
-        CFramePos = CFrame.new(-290.074677, 42.9034653, 5581.58984, 0.965929627, -0, -0.258804798, 0, 1, -0, 0.258804798, 0, 0.965929627),
+        CFramePos = CFrame.new(-448.63, 108.59, 5950.81),
         QuestGiver = "",
         World = 3
     },
@@ -478,7 +479,7 @@ local Quests = {
         QuestName = "AmazonQuest",
         EnemyName = "Dragon Crew Warrior",
         LevelQuest = 1,
-        CFramePos = CFrame.new(5832.83594, 51.6806107, -1101.51563, 0.898790359, -0, -0.438378751, 0, 1, -0, 0.438378751, 0, 0.898790359),
+        CFramePos = CFrame.new(6737.01, 127.42, -710.69),
         QuestGiver = "",
         Wolrd = 3
     },
@@ -487,25 +488,25 @@ local Quests = {
         QuestName = "AmazonQuest",
         EnemyName = "Dragon Crew Archer",
         LevelQuest = 2,
-        CFramePos = CFrame.new(5833.1147460938, 51.60498046875, -1103.0693359375),
+        CFramePos = CFrame.new(6737.01, 127.42, -710.69),
         QuestGiver = "",
         World = 3
     },
-    Female_Islander = {
-        Enemy = "Female Islander [Lv. 1625]",
+    Hydra_Enforcers = {
+        Enemy = "Hydra Enforcers [Lv. 1625]",
         QuestName = "AmazonQuest2",
-        EnemyName = "Female Islander",
+        EnemyName = "Hydra Enforcers",
         LevelQuest = 1,
-        CFramePos = CFrame.new(5446.8793945313, 601.62945556641, 749.45672607422),
+        CFramePos = CFrame.new(5214.87, 1004.11, 761.66),
         QuestGiver = "",
         World = 3
     },
-    Giant_Islander = {
-        Enemy = "Giant Islander [Lv. 1650]",
+    Venomous_Assailants = {
+        Enemy = "Venomous Assailants [Lv. 1650]",
         QuestName = "AmazonQuest2",
-        EnemyName = "Giant Islander",
+        EnemyName = "Venomous Assailants",
         LevelQuest = 2,
-        CFramePos = CFrame.new(5446.8793945313, 601.62945556641, 749.45672607422),
+        CFramePos = CFrame.new(5214.87, 1004.11, 761.66),
         QuestGiver = "",
         Wolrd = 3
     },
@@ -514,7 +515,7 @@ local Quests = {
         QuestName = "MarineTreeIsland",
         EnemyName = "Marine Commodore",
         LevelQuest = 1,
-        CFramePos = CFrame.new(2180.54126, 27.8156815, -6741.5498, -0.965929747, 0, 0.258804798, 0, 1, 0, -0.258804798, 0, -0.965929747),
+        CFramePos = CFrame.new(2483.49, 74.27, -6787.43),
         QuestGiver = "",
         World = 3
     },
@@ -523,7 +524,7 @@ local Quests = {
         QuestName = "MarineTreeIsland",
         EnemyName = "Marine Rear Admiral",
         LevelQuest = 2,
-        CFramePos = CFrame.new(2180.54126, 27.8156815, -6741.5498, -0.965929747, 0, 0.258804798, 0, 1, 0, -0.258804798, 0, -0.965929747),
+        CFramePos = CFrame.new(2483.49, 74.27, -6787.43),
         QuestGiver = "",
         World = 3
     },
@@ -730,7 +731,7 @@ local Quests = {
         QuestName = "CandyQuest1",
         EnemyName = "Candy Pirate",
         LevelQuest = 1,
-        CFramePos = CFrame.new(-1149.3280029296875, 13.57590389251709, -14445.6142578125),
+        CFramePos = CFrame.new(-1162.58, 60.19, -14492.85),
         QuestGiver = " ",
         World = 3
     },
@@ -739,10 +740,118 @@ local Quests = {
         QuestName = "CandyQuest1",
         EnemyName = "Snow Demon",
         LevelQuest = 2,
-        CFramePos = CFrame.new(-1149.3280029296875, 13.57590389251709, -14445.6142578125),
+        CFramePos = CFrame.new(-1162.58, 60.19, -14492.85),
         QuestGiver = " ",
         World = 3
-    }
+    },
+        Isle_Outlaw = {
+        Enemy = "Isle Outlaw [Lv. 2450]",
+        QuestName = "TikiQuest1",
+        EnemyName = "Isle Outlaw",
+        LevelQuest = 1,
+        CFramePos = CFrame.new(-16547.62, 55.73, -170.99),
+        QuestGiver = " ",
+        World = 3
+    },
+        Island_Boy = {
+        Enemy = "Island Boy [Lv. 2475]",
+        QuestName = "TikiQuest1",
+        EnemyName = "Island Boy",
+        LevelQuest = 2,
+        CFramePos = CFrame.new(-16547.62, 55.73, -170.99),
+        QuestGiver = " ",
+        World = 3
+    },
+        Sunkissed_Warriors = {
+        Enemy = "Sunkissed Warrior [Lv. 2500]",
+        QuestName = "TikiQuest2",
+        EnemyName = "Sunkissed Warrior",
+        LevelQuest = 1,
+        CFramePos = CFrame.new(-16537.52, 55.73, 1052.46),
+        QuestGiver = " ",
+        World = 3
+    },
+        Isle_Champion = {
+        Enemy = "Isle Champion [Lv. 2525]",
+        QuestName = "TikiQuest2",
+        EnemyName = "Isle Champion",
+        LevelQuest = 2,
+        CFramePos = CFrame.new(-16537.52, 55.73, 1052.46),
+        QuestGiver = " ",
+        World = 3
+    },
+        Serpent_Hunter = {
+        Enemy = "Serpent Hunter [Lv. 2550]",
+        QuestName = "TikiQuest3",
+        EnemyName = "Serpent Hunter",
+        LevelQuest = 1,
+        CFramePos = CFrame.new(-16665.49, 105.28, 1577.52),
+        QuestGiver = " ",
+        World = 3
+    },
+        Skull_Slayer = {
+        Enemy = "Skull Slayer [Lv. 2575]",
+        QuestName = "TikiQuest3",
+        EnemyName = "Skull Slayer",
+        LevelQuest = 2,
+        CFramePos = CFrame.new(-16665.49, 105.28, 1577.52),
+        QuestGiver = " ",
+        World = 3
+    },
+        Reef_Bandit = {
+        Enemy = "Reef Bandit [Lv. 2600]",
+        QuestName = "SubmergedQuest1",
+        EnemyName = "Reef Bandit",
+        LevelQuest = 1,
+        CFramePos = CFrame.new(10783.55, -2087.73, 9259.88),
+        QuestGiver = " ",
+        World = 3
+    },
+        Coral_Pirate = {
+        Enemy = "Coral Pirate [Lv. 2625]",
+        QuestName = "SubmergedQuest1",
+        EnemyName = "Coral Pirate",
+        LevelQuest = 2,
+        CFramePos = CFrame.new(10783.55, -2087.73, 9259.88),
+        QuestGiver = " ",
+        World = 3
+    },
+        Sea_Chanter = {
+        Enemy = "Sea Chanter [Lv. 2650]",
+        QuestName = "SubmergedQuest2",
+        EnemyName = "Sea Chanter",
+        LevelQuest = 1,
+        CFramePos = CFrame.new(10880.95, -2086.20, 10035.28),
+        QuestGiver = " ",
+        World = 3
+    },
+        Ocean_Prophet = {
+        Enemy = "Ocean Prophet [Lv. 2675]",
+        QuestName = "SubmergedQuest2",
+        EnemyName = "Ocean Prophet",
+        LevelQuest = 2,
+        CFramePos = CFrame.new(10880.95, -2086.20, 10035.28),
+        QuestGiver = " ",
+        World = 3
+    },
+        High_Disciple = {
+        Enemy = "High Disciple [Lv. 2700]",
+        QuestName = "SubmergedQuest3",
+        EnemyName = "High Disciple",
+        LevelQuest = 1,
+        CFramePos = CFrame.new(9639.85, -1992.45, 9617.00),
+        QuestGiver = " ",
+        World = 3
+    },
+        Grand_Devotee = {
+        Enemy = "Grand Devotee [Lv. 2725]",
+        QuestName = "SubmergedQuest3",
+        EnemyName = "Grand Devotee",
+        LevelQuest = 2,
+        CFramePos = CFrame.new(9639.85, -1992.45, 9617.00),
+        QuestGiver = " ",
+        World = 3
+    },
 }
 
 local Levels = {
@@ -1161,12 +1270,12 @@ local Levels = {
         LowestLevel = 2475,
         MaxLevel = 2500
 	},
-    Sunkissed_Warrior = {
-        Enemy = "Sun-kissed Warrior",
+    Sunkissed_Warriors = {
+        Enemy = "Sun-kissed Warriors",
         LowestLevel = 2500,
         MaxLevel = 2525
     },
-    Isle_Champion = {
+    Isle_Champions = {
         Enemy = "Isle Champion",
         LowestLevel = 2525,
         MaxLevel = 2550
