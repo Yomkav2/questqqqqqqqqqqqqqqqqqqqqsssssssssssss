@@ -1,3 +1,4 @@
+--yomkamadeit
 local QuestsData = {QuestsNames, Quests}
 
 local Quests = {
@@ -13,7 +14,7 @@ local Quests = {
         World = 1
     },
     Monkey = {
-        Enemy = "Monkey [Lv. 14]",
+        Enemy = "Monkey [Lv. 15]",
         QuestName = "JungleQuest",
         EnemyName = "Monkey",
         LevelQuest = 1,
@@ -87,7 +88,7 @@ local Quests = {
     Chief_Petty_Officer = {
         Enemy = "Chief Petty Officer [Lv. 120]",
         QuestName = "MarineQuest2",
-        EnemyName = "Cheif Petty Officer",
+        EnemyName = "Chief Petty Officer",
         LevelQuest = 1,
         CFramePos = CFrame.new(-5039.58643, 27.3500385, 4324.68018, 0, 0, -1, 0, 1, 0, 1, 0, 0),
         QuestGiver = "Marine",
@@ -480,7 +481,7 @@ local Quests = {
         LevelQuest = 1,
         CFramePos = CFrame.new(6737.01, 127.42, -710.69),
         QuestGiver = "",
-        Wolrd = 3
+        World = 3
     },
     Dragon_Crew_Archer = {
         Enemy = "Dragon Crew Archer [Lv. 1600]",
@@ -507,7 +508,7 @@ local Quests = {
         LevelQuest = 2,
         CFramePos = CFrame.new(5214.87, 1004.11, 761.66),
         QuestGiver = "",
-        Wolrd = 3
+        World = 3
     },
     Marine_Commodore = {
         Enemy = "Marine Commodore [Lv. 1700]",
@@ -857,11 +858,11 @@ local Levels = {
     Bandit = {
         Enemy = "Bandit",
         LowestLevel = 0,
-        MaxLevel = 14,
+        MaxLevel = 15,
     },
     Monkey = {
         Enemy = "Monkey",
-        LowestLevel = 14,
+        LowestLevel = 15,
         MaxLevel = 20
     },
     Gorilla = {
@@ -944,7 +945,7 @@ local Levels = {
         LowestLevel = 325,
         MaxLevel = 375
     },
-    Fishman_Warror = {
+    Fishman_Warrior = {
         Enemy = "Fishman Warrior",
         LowestLevel = 375,
         MaxLevel = 400
@@ -974,8 +975,8 @@ local Levels = {
         LowestLevel = 550,
         MaxLevel = 625
     },
-    Gallery_Pirate = {
-        Enemy = "Gallery Pirate",
+    Galley_Pirate = {
+        Enemy = "Galley Pirate",
         LowestLevel = 625,
         MaxLevel = 700
     },
