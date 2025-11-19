@@ -1,4 +1,4 @@
---yomkamadeit
+--yomkamadeit222
 local QuestsData = {QuestsNames, Quests}
 
 local Quests = {
@@ -1350,13 +1350,36 @@ function QuestsData.CheckForQuest(Enemy)
 	return false
 end
 
+-- Заменить функцию CalculateLevel на эту безопасную версию
 function QuestsData.CalculateLevel(Level)
-    for i,v in pairs(Levels) do
-        if Level >= (v.LowestLevel + 0.1) and Level <= (v.MaxLevel + 0.1) then
-            return v.Enemy
+    -- попытка привести аргумент к числу
+    local lvl = tonumber(Level)
+    if not lvl then
+        warn("CalculateLevel: передан некорректный уровень:", tostring(Level))
+        return nil
+    end
+
+    for key, v in pairs(Levels) do
+        if type(v) ~= "table" then
+            warn("CalculateLevel: Levels[" .. tostring(key) .. "] не таблица:", tostring(v))
+        else
+            local low = tonumber(v.LowestLevel)
+            local max = tonumber(v.MaxLevel)
+
+            if not low or not max then
+                warn("CalculateLevel: Levels[" .. tostring(key) .. "] пропущено LowestLevel или MaxLevel. lowest=", tostring(v.LowestLevel), " max=", tostring(v.MaxLevel))
+            else
+                if lvl >= (low + 0.1) and lvl <= (max + 0.1) then
+                    return v.Enemy
+                end
+            end
         end
     end
+
+    -- если ничего не найдено — вернуть nil (или другой сигнал по вашему желанию)
+    return nil
 end
+
 
 local FirstSea = {}
 local SecondSea = {}
