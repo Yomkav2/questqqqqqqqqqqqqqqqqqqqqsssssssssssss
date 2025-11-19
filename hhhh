@@ -1,4 +1,4 @@
---yomkamadeit222
+--yomkamadeit
 local QuestsData = {QuestsNames, Quests}
 
 local Quests = {
@@ -1350,35 +1350,66 @@ function QuestsData.CheckForQuest(Enemy)
 	return false
 end
 
--- Заменить функцию CalculateLevel на эту безопасную версию
-function QuestsData.CalculateLevel(Level)
-    -- попытка привести аргумент к числу
-    local lvl = tonumber(Level)
-    if not lvl then
-        warn("CalculateLevel: передан некорректный уровень:", tostring(Level))
+function QuestsData.GetPlayerLevel()
+    local Players = game:GetService("Players")
+    local plr = Players.LocalPlayer
+    if not plr then
+        warn("GetPlayerLevel: LocalPlayer отсутствует.")
         return nil
     end
 
+    local ok, data = pcall(function() return plr:FindFirstChild("Data") or plr:WaitForChild("Data", 5) end)
+    if not ok or not data then
+        warn("GetPlayerLevel: не удалось получить 'Data' у игрока.")
+        return nil
+    end
+
+    local ok2, lvlObj = pcall(function() return data:FindFirstChild("Level") or data:WaitForChild("Level", 5) end)
+    if not ok2 or not lvlObj then
+        warn("GetPlayerLevel: не удалось получить 'Level' в Data.")
+        return nil
+    end
+
+    if typeof and typeof(lvlObj) == "Instance" and lvlObj.Value ~= nil then
+        return tonumber(lvlObj.Value)
+    end
+
+    return tonumber(lvlObj)
+end
+
+
+
+function QuestsData.CalculateLevel(Level)
+    local lvl = tonumber(Level)
+
+    if not lvl then
+        lvl = QuestsData.GetPlayerLevel()
+        if not lvl then
+            warn("CalculateLevel: передан некорректный уровень и уровень игрока не доступен. Level arg:", tostring(Level))
+            return nil
+        end
+    end
+
     for key, v in pairs(Levels) do
-        if type(v) ~= "table" then
-            warn("CalculateLevel: Levels[" .. tostring(key) .. "] не таблица:", tostring(v))
-        else
+        if type(v) == "table" then
             local low = tonumber(v.LowestLevel)
             local max = tonumber(v.MaxLevel)
 
-            if not low or not max then
-                warn("CalculateLevel: Levels[" .. tostring(key) .. "] пропущено LowestLevel или MaxLevel. lowest=", tostring(v.LowestLevel), " max=", tostring(v.MaxLevel))
+            if low == nil or max == nil then
+                warn("CalculateLevel: пропущена граница в Levels[" .. tostring(key) .. "]: lowest=" .. tostring(v.LowestLevel) .. " max=" .. tostring(v.MaxLevel))
             else
                 if lvl >= (low + 0.1) and lvl <= (max + 0.1) then
                     return v.Enemy
                 end
             end
+        else
+            warn("CalculateLevel: ожидается таблица в Levels[" .. tostring(key) .. "], но получено: " .. tostring(v))
         end
     end
 
-    -- если ничего не найдено — вернуть nil (или другой сигнал по вашему желанию)
     return nil
 end
+
 
 
 local FirstSea = {}
@@ -1398,5 +1429,6 @@ end
 QuestsData.FirstSea = FirstSea
 QuestsData.SecondSea = SecondSea
 QuestsData.ThirdSea = ThirdSea
+
 
 return QuestsData
