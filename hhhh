@@ -59,7 +59,7 @@ local Quests = {
         World = 1
     },
     Desert_Officer = {
-        Enemy = "Desert Officer [Lv. 70]",
+        Enemy = "Desert Officer [Lv. 75]",
         QuestName = "DesertQuest",
         EnemyName = "Desert Officer",
         LevelQuest = 2,
@@ -887,7 +887,7 @@ local Levels = {
     },
     Desert_Officer = {
         Enemy = "Desert Officer",
-        LowestLevel = 70,
+        LowestLevel = 75,
         MaxLevel = 90
     },
     Snow_Bandit = {
