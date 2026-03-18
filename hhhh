@@ -883,7 +883,7 @@ local Levels = {
     Desert_Bandit = {
         Enemy = "Desert Bandit",
         LowestLevel = 60,
-        MaxLevel = 70
+        MaxLevel = 75
     },
     Desert_Officer = {
         Enemy = "Desert Officer",
