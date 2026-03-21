@@ -1,4 +1,4 @@
---yomkamadeit
+--yomkamadeit 111
 local QuestsData = {QuestsNames, Quests}
 
 local Quests = {
@@ -1120,13 +1120,13 @@ local Levels = {
         LowestLevel = 1600,
         MaxLevel = 1625
     },
-    Female_Islander = {
-        Enemy = "Female Islander",
+    Hydra_Enforcer = {
+        Enemy = "Hydra Enforcer",
         LowestLevel = 1625,
         MaxLevel = 1650
     },
-    Giant_Islander = {
-        Enemy = "Giant Islander",
+    Venomous_Assailant = {
+        Enemy = "Venomous Assailant",
         LowestLevel = 1650,
         MaxLevel = 1700
     },
