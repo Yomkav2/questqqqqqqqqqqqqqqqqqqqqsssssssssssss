@@ -1,9 +1,6 @@
---yomkamadeit 111
-local QuestsData = {QuestsNames, Quests}
+local QuestsData = {}
 
 local Quests = {
-    -- First Sea
-	
     Bandit = {
         Enemy = "Bandit [Lv. 5]",
         QuestName = "BanditQuest1",
@@ -244,11 +241,6 @@ local Quests = {
 	    QuestGiver = "Freezeburg Quest Giver",
         World = 1
     },
-	
-
-    -- Second Sea
-
-
     Raider = {
         Enemy = "Raider [Lv. 700]",
         QuestName = "Area1Quest",
@@ -270,7 +262,7 @@ local Quests = {
     Swan_Pirate = {
         Enemy = "Swan Pirate [Lv. 775]",
         QuestName = "Area2Quest",
-        EnemyName = "Spawn Pirate",
+        EnemyName = "Swan Pirate",
         LevelQuest = 1,
         CFramePos = CFrame.new(638.43811, 71.769989, 918.282898, 0.139203906, 0, 0.99026376, 0, 1, 0, -0.99026376, 0, 0.139203906),
         QuestGiver = "Area 2 Quest Giver",
@@ -451,18 +443,13 @@ local Quests = {
         QuestGiver = "Forgotten Quest Giver",
         World = 2
     },
-
-
-    -- Third Sea
-
-
     Pirate_Millionaire = {
         Enemy = "Pirate Millionaire [Lv. 1500]",
         QuestName = "PiratePortQuest",
         EnemyName = "Pirate Millionaire",
         LevelQuest = 1,
         CFramePos = CFrame.new(-448.63, 108.59, 5950.81),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Pistol_Billonaire = {
@@ -471,7 +458,7 @@ local Quests = {
         EnemyName = "Pistol Billionaire",
         LevelQuest = 2,
         CFramePos = CFrame.new(-448.63, 108.59, 5950.81),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Dragon_Crew_Warrior = {
@@ -480,7 +467,7 @@ local Quests = {
         EnemyName = "Dragon Crew Warrior",
         LevelQuest = 1,
         CFramePos = CFrame.new(6737.01, 127.42, -710.69),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Dragon_Crew_Archer = {
@@ -489,25 +476,25 @@ local Quests = {
         EnemyName = "Dragon Crew Archer",
         LevelQuest = 2,
         CFramePos = CFrame.new(6737.01, 127.42, -710.69),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
-    Hydra_Enforcers = {
-        Enemy = "Hydra Enforcers [Lv. 1625]",
+    Hydra_Enforcer = {
+        Enemy = "Hydra Enforcer [Lv. 1625]",
         QuestName = "AmazonQuest2",
-        EnemyName = "Hydra Enforcers",
+        EnemyName = "Hydra Enforcer",
         LevelQuest = 1,
         CFramePos = CFrame.new(5214.87, 1004.11, 761.66),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
-    Venomous_Assailants = {
-        Enemy = "Venomous Assailants [Lv. 1650]",
+    Venomous_Assailant = {
+        Enemy = "Venomous Assailant [Lv. 1650]",
         QuestName = "AmazonQuest2",
-        EnemyName = "Venomous Assailants",
+        EnemyName = "Venomous Assailant",
         LevelQuest = 2,
         CFramePos = CFrame.new(5214.87, 1004.11, 761.66),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Marine_Commodore = {
@@ -516,7 +503,7 @@ local Quests = {
         EnemyName = "Marine Commodore",
         LevelQuest = 1,
         CFramePos = CFrame.new(2483.49, 74.27, -6787.43),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Marine_Rear_Admiral = {
@@ -525,7 +512,7 @@ local Quests = {
         EnemyName = "Marine Rear Admiral",
         LevelQuest = 2,
         CFramePos = CFrame.new(2483.49, 74.27, -6787.43),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Fishman_Raider = {
@@ -534,7 +521,7 @@ local Quests = {
         EnemyName = "Fishman Raider",
         LevelQuest = 1,
         CFramePos = CFrame.new(-10581.6563, 330.872955, -8761.18652, -0.882952213, 0, 0.469463557, 0, 1, 0, -0.469463557, 0, -0.882952213),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Fishman_Captain = {
@@ -543,7 +530,7 @@ local Quests = {
         EnemyName = "Fishman Captain",
         LevelQuest = 2,
         CFramePos = CFrame.new(-10581.6563, 330.872955, -8761.18652, -0.882952213, 0, 0.469463557, 0, 1, 0, -0.469463557, 0, -0.882952213),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Forest_Pirate = {
@@ -552,7 +539,7 @@ local Quests = {
         EnemyName = "Forest Pirate",
         LevelQuest = 1,
         CFramePos = CFrame.new(-13234.04, 331.488495, -7625.40137, 0.707134247, -0, -0.707079291, 0, 1, -0, 0.707079291, 0, 0.707134247),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Mythological_Pirate = {
@@ -561,7 +548,7 @@ local Quests = {
         EnemyName = "Mythological Pirate",
         LevelQuest = 2,
         CFramePos = CFrame.new(-13234.04, 331.488495, -7625.40137, 0.707134247, -0, -0.707079291, 0, 1, -0, 0.707079291, 0, 0.707134247),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Jungle_Pirate = {
@@ -570,7 +557,7 @@ local Quests = {
         EnemyName = "Jungle Pirate",
         LevelQuest = 1,
         CFramePos = CFrame.new(-12680.3818, 389.971039, -9902.01953, -0.0871315002, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, -0.0871315002),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Musketeer_Pirate = {
@@ -579,7 +566,7 @@ local Quests = {
         EnemyName = "Musketeer Pirate",
         LevelQuest = 2,
         CFramePos = CFrame.new(-12680.3818, 389.971039, -9902.01953, -0.0871315002, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, -0.0871315002),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Reborn_Skeleton = {
@@ -588,7 +575,7 @@ local Quests = {
         EnemyName = "Reborn Skeleton",
         LevelQuest = 1,
         CFramePos = CFrame.new(-9479.2168, 141.215088, 5566.09277, 0, 0, 1, 0, 1, -0, -1, 0, 0),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Living_Zombie = {
@@ -597,7 +584,7 @@ local Quests = {
         EnemyName = "Living Zombie",
         LevelQuest = 2,
         CFramePos = CFrame.new(-9479.2168, 141.215088, 5566.09277, 0, 0, 1, 0, 1, -0, -1, 0, 0),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Demonic_Soul = {
@@ -606,7 +593,7 @@ local Quests = {
         EnemyName = "Demonic Soul",
         LevelQuest = 1,
         CFramePos = CFrame.new(-9479.2168, 141.215088, 5566.09277, 0, 0, 1, 0, 1, -0, -1, 0, 0),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Posessed_Mummy = {
@@ -615,7 +602,7 @@ local Quests = {
         EnemyName = "Posessed Mummy",
         LevelQuest = 2,
         CFramePos = CFrame.new(-9516.99316, 172.017181, 6078.46533, 0, 0, -1, 0, 1, 0, 1, 0, 0),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Peanut_Scout = {
@@ -624,7 +611,7 @@ local Quests = {
         EnemyName = "Peanut Scout",
         LevelQuest = 1,
         CFramePos = CFrame.new(-2104.3908691406, 38.104167938232, -10194.21875, 0, 0, -1, 0, 1, 0, 1, 0, 0),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Peanut_President = {
@@ -633,7 +620,7 @@ local Quests = {
         EnemyName = "Peanut President",
         LevelQuest = 2,
         CFramePos = CFrame.new(-2104.3908691406, 38.104167938232, -10194.21875, 0, 0, -1, 0, 1, 0, 1, 0, 0),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Ice_Cream_Chef = {
@@ -642,7 +629,7 @@ local Quests = {
         EnemyName = "Ice Cream Chef",
         LevelQuest = 1,
         CFramePos = CFrame.new(-819.84533691406, 65.845329284668, -10965.487304688),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Ice_Cream_Commander = {
@@ -651,7 +638,7 @@ local Quests = {
         EnemyName = "Ice Cream Commander",
         LevelQuest = 2,
         CFramePos = CFrame.new(-819.84533691406, 65.845329284668, -10965.487304688),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Cookie_Crafter = {
@@ -660,7 +647,7 @@ local Quests = {
         EnemyName = "Cookie Crafter",
         LevelQuest = 1,
         CFramePos = CFrame.new(-2022.29858, 36.9275894, -12030.9766, -0.961273909, 0, -0.275594592, 0, 1, 0, 0.275594592, 0, -0.961273909),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Cake_Guard = {
@@ -669,7 +656,7 @@ local Quests = {
         EnemyName = "Cake Guard",
         LevelQuest = 2,
         CFramePos = CFrame.new(-2022.29858, 36.9275894, -12030.9766, -0.961273909, 0, -0.275594592, 0, 1, 0, 0.275594592, 0, -0.961273909),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Baking_Staff = {
@@ -678,7 +665,7 @@ local Quests = {
         EnemyName = "Baking Staff",
         LevelQuest = 1,
         CFramePos = CFrame.new(-1928.31763, 37.7296638, -12840.626, 0.951068401, -0, -0.308980465, 0, 1, -0, 0.308980465, 0, 0.951068401),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Head_Baker = {
@@ -687,7 +674,7 @@ local Quests = {
         EnemyName = "Head Baker",
         LevelQuest = 2,
         CFramePos = CFrame.new(-1928.31763, 37.7296638, -12840.626, 0.951068401, -0, -0.308980465, 0, 1, -0, 0.308980465, 0, 0.951068401),
-        QuestGiver = "",
+        QuestGiver = " ",
         World = 3
     },
     Cocoa_Warrior = {
@@ -744,7 +731,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Isle_Outlaw = {
+    Isle_Outlaw = {
         Enemy = "Isle Outlaw [Lv. 2450]",
         QuestName = "TikiQuest1",
         EnemyName = "Isle Outlaw",
@@ -753,7 +740,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Island_Boy = {
+    Island_Boy = {
         Enemy = "Island Boy [Lv. 2475]",
         QuestName = "TikiQuest1",
         EnemyName = "Island Boy",
@@ -762,7 +749,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Sunkissed_Warriors = {
+    Sunkissed_Warriors = {
         Enemy = "Sunkissed Warrior [Lv. 2500]",
         QuestName = "TikiQuest2",
         EnemyName = "Sunkissed Warrior",
@@ -771,7 +758,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Isle_Champion = {
+    Isle_Champion = {
         Enemy = "Isle Champion [Lv. 2525]",
         QuestName = "TikiQuest2",
         EnemyName = "Isle Champion",
@@ -780,7 +767,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Serpent_Hunter = {
+    Serpent_Hunter = {
         Enemy = "Serpent Hunter [Lv. 2550]",
         QuestName = "TikiQuest3",
         EnemyName = "Serpent Hunter",
@@ -789,7 +776,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Skull_Slayer = {
+    Skull_Slayer = {
         Enemy = "Skull Slayer [Lv. 2575]",
         QuestName = "TikiQuest3",
         EnemyName = "Skull Slayer",
@@ -798,7 +785,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Reef_Bandit = {
+    Reef_Bandit = {
         Enemy = "Reef Bandit [Lv. 2600]",
         QuestName = "SubmergedQuest1",
         EnemyName = "Reef Bandit",
@@ -807,7 +794,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Coral_Pirate = {
+    Coral_Pirate = {
         Enemy = "Coral Pirate [Lv. 2625]",
         QuestName = "SubmergedQuest1",
         EnemyName = "Coral Pirate",
@@ -816,7 +803,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Sea_Chanter = {
+    Sea_Chanter = {
         Enemy = "Sea Chanter [Lv. 2650]",
         QuestName = "SubmergedQuest2",
         EnemyName = "Sea Chanter",
@@ -825,7 +812,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Ocean_Prophet = {
+    Ocean_Prophet = {
         Enemy = "Ocean Prophet [Lv. 2675]",
         QuestName = "SubmergedQuest2",
         EnemyName = "Ocean Prophet",
@@ -834,7 +821,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        High_Disciple = {
+    High_Disciple = {
         Enemy = "High Disciple [Lv. 2700]",
         QuestName = "SubmergedQuest3",
         EnemyName = "High Disciple",
@@ -843,7 +830,7 @@ local Quests = {
         QuestGiver = " ",
         World = 3
     },
-        Grand_Devotee = {
+    Grand_Devotee = {
         Enemy = "Grand Devotee [Lv. 2725]",
         QuestName = "SubmergedQuest3",
         EnemyName = "Grand Devotee",
@@ -851,475 +838,103 @@ local Quests = {
         CFramePos = CFrame.new(9639.85, -1992.45, 9617.00),
         QuestGiver = " ",
         World = 3
-    },
+    }
 }
 
 local Levels = {
-    Bandit = {
-        Enemy = "Bandit",
-        LowestLevel = 0,
-        MaxLevel = 15,
-    },
-    Monkey = {
-        Enemy = "Monkey",
-        LowestLevel = 15,
-        MaxLevel = 20
-    },
-    Gorilla = {
-        Enemy = "Gorilla",
-        LowestLevel = 20,
-        MaxLevel = 35
-    },
-    Pirate = {
-        Enemy = "Pirate",
-        LowestLevel = 35,
-        MaxLevel = 45
-    },
-    Brute = {
-        Enemy = "Brute",
-        LowestLevel = 45,
-        MaxLevel = 60
-    },
-    Desert_Bandit = {
-        Enemy = "Desert Bandit",
-        LowestLevel = 60,
-        MaxLevel = 75
-    },
-    Desert_Officer = {
-        Enemy = "Desert Officer",
-        LowestLevel = 75,
-        MaxLevel = 90
-    },
-    Snow_Bandit = {
-        Enemy = "Snow Bandit",
-        LowestLevel = 90,
-        MaxLevel = 100
-    },
-    Snowman = {
-        Enemy = "Snowman",
-        LowestLevel = 100,
-        MaxLevel = 120
-    },
-    Chief_Petty_Officer = {
-        Enemy = "Chief Petty Officer",
-        LowestLevel = 120,
-        MaxLevel = 150
-    },
-    Sky_Bandit = {
-        Enemy = "Sky Bandit",
-        LowestLevel = 150,
-        MaxLevel = 175
-    },
-    Dark_Master = {
-        Enemy = "Dark Master",
-        LowestLevel = 175,
-        MaxLevel = 190
-    },
-    Prisoner = {
-        Enemy = "Prisoner",
-        LowestLevel = 190,
-        MaxLevel = 210
-    },
-    Dangerous_Prisoner = {
-        Enemy = "Dangerous Prisoner",
-        LowestLevel = 210,
-        MaxLevel = 250
-    },
-    Toga_Warrior = {
-        Enemy = "Toga Warrior",
-        LowestLevel = 250,
-        MaxLevel = 275
-    },
-    Gladiator = {
-        Enemy = "Gladiator",
-        LowestLevel = 275,
-        MaxLevel = 300
-    },
-    Military_Soldier = {
-        Enemy = "Military Soldier",
-        LowestLevel = 300,
-        MaxLevel = 325
-    },
-    Military_Spy = {
-        Enemy = "Military Spy",
-        LowestLevel = 325,
-        MaxLevel = 375
-    },
-    Fishman_Warrior = {
-        Enemy = "Fishman Warrior",
-        LowestLevel = 375,
-        MaxLevel = 400
-    },
-    Fishman_Commando = {
-        Enemy = "Fishman Commando",
-        LowestLevel = 400,
-        MaxLevel = 450
-    },
-    God_Guard = {
-        Enemy = "God's Guard",
-        LowestLevel = 450,
-        MaxLevel = 475
-    },
-    Shanda = {
-        Enemy = "Shanda",
-        LowestLevel = 475,
-        MaxLevel = 525
-    },
-    Royal_Squad = {
-        Enemy = "Royal Squad",
-        LowestLevel = 525,
-        MaxLevel = 550
-    },
-    Royal_Soldier = {
-        Enemy = "Royal Soldier",
-        LowestLevel = 550,
-        MaxLevel = 625
-    },
-    Galley_Pirate = {
-        Enemy = "Galley Pirate",
-        LowestLevel = 625,
-        MaxLevel = 700
-    },
+    Bandit = { Enemy = "Bandit", LowestLevel = 0, MaxLevel = 15 },
+    Monkey = { Enemy = "Monkey", LowestLevel = 15, MaxLevel = 20 },
+    Gorilla = { Enemy = "Gorilla", LowestLevel = 20, MaxLevel = 35 },
+    Pirate = { Enemy = "Pirate", LowestLevel = 35, MaxLevel = 45 },
+    Brute = { Enemy = "Brute", LowestLevel = 45, MaxLevel = 60 },
+    Desert_Bandit = { Enemy = "Desert Bandit", LowestLevel = 60, MaxLevel = 75 },
+    Desert_Officer = { Enemy = "Desert Officer", LowestLevel = 75, MaxLevel = 90 },
+    Snow_Bandit = { Enemy = "Snow Bandit", LowestLevel = 90, MaxLevel = 100 },
+    Snowman = { Enemy = "Snowman", LowestLevel = 100, MaxLevel = 120 },
+    Chief_Petty_Officer = { Enemy = "Chief Petty Officer", LowestLevel = 120, MaxLevel = 150 },
+    Sky_Bandit = { Enemy = "Sky Bandit", LowestLevel = 150, MaxLevel = 175 },
+    Dark_Master = { Enemy = "Dark Master", LowestLevel = 175, MaxLevel = 190 },
+    Prisoner = { Enemy = "Prisoner", LowestLevel = 190, MaxLevel = 210 },
+    Dangerous_Prisoner = { Enemy = "Dangerous Prisoner", LowestLevel = 210, MaxLevel = 250 },
+    Toga_Warrior = { Enemy = "Toga Warrior", LowestLevel = 250, MaxLevel = 275 },
+    Gladiator = { Enemy = "Gladiator", LowestLevel = 275, MaxLevel = 300 },
+    Military_Soldier = { Enemy = "Military Soldier", LowestLevel = 300, MaxLevel = 325 },
+    Military_Spy = { Enemy = "Military Spy", LowestLevel = 325, MaxLevel = 375 },
+    Fishman_Warrior = { Enemy = "Fishman Warrior", LowestLevel = 375, MaxLevel = 400 },
+    Fishman_Commando = { Enemy = "Fishman Commando", LowestLevel = 400, MaxLevel = 450 },
+    God_Guard = { Enemy = "God's Guard", LowestLevel = 450, MaxLevel = 475 },
+    Shanda = { Enemy = "Shanda", LowestLevel = 475, MaxLevel = 525 },
+    Royal_Squad = { Enemy = "Royal Squad", LowestLevel = 525, MaxLevel = 550 },
+    Royal_Soldier = { Enemy = "Royal Soldier", LowestLevel = 550, MaxLevel = 625 },
+    Galley_Pirate = { Enemy = "Galley Pirate", LowestLevel = 625, MaxLevel = 700 },
 
+    Raider = { Enemy = "Raider", LowestLevel = 700, MaxLevel = 725 },
+    Mercenary = { Enemy = "Mercenary", LowestLevel = 725, MaxLevel = 775 },
+    Swan_Pirate = { Enemy = "Swan Pirate", LowestLevel = 775, MaxLevel = 800 },
+    Factory_Staff = { Enemy = "Factory Staff", LowestLevel = 800, MaxLevel = 875 },
+    Marine_Lieutenant = { Enemy = "Marine Lieutenant", LowestLevel = 875, MaxLevel = 900 },
+    Marine_Captain = { Enemy = "Marine Captain", LowestLevel = 900, MaxLevel = 950 },
+    Zombie = { Enemy = "Zombie", LowestLevel = 950, MaxLevel = 975 },
+    Vampire = { Enemy = "Vampire", LowestLevel = 975, MaxLevel = 1000 },
+    Snow_Trooper = { Enemy = "Snow Trooper", LowestLevel = 1000, MaxLevel = 1050 },
+    Winter_Warrior = { Enemy = "Winter Warrior", LowestLevel = 1050, MaxLevel = 1100 },
+    Lab_Subordinate = { Enemy = "Lab Subordinate", LowestLevel = 1100, MaxLevel = 1125 },
+    Horned_Warrior = { Enemy = "Horned Warrior", LowestLevel = 1125, MaxLevel = 1175 },
+    Magma_Ninja = { Enemy = "Magma Ninja", LowestLevel = 1175, MaxLevel = 1200 },
+    Lava_Pirate = { Enemy = "Lava Pirate", LowestLevel = 1200, MaxLevel = 1250 },
+    Ship_Deckhand = { Enemy = "Ship Deckhand", LowestLevel = 1250, MaxLevel = 1275 },
+    Ship_Engineer = { Enemy = "Ship Engineer", LowestLevel = 1275, MaxLevel = 1300 },
+    Ship_Steward = { Enemy = "Ship Steward", LowestLevel = 1300, MaxLevel = 1325 },
+    Ship_Officer = { Enemy = "Ship Officer", LowestLevel = 1325, MaxLevel = 1375 },
+    Arctic_Warrior = { Enemy = "Arctic Warrior", LowestLevel = 1375, MaxLevel = 1425 },
+    Snow_Lurker = { Enemy = "Snow Lurker", LowestLevel = 1375, MaxLevel = 1425 },
+    Sea_Soldier = { Enemy = "Sea Soldier", LowestLevel = 1425, MaxLevel = 1450 },
+    Water_Fighter = { Enemy = "Water Fighter", LowestLevel = 1450, MaxLevel = 1500 },
 
-    -- Second Sea
-
-
-    Raider = {
-        Enemy = "Raider",
-        LowestLevel = 700,
-        MaxLevel = 725
-    },
-    Mercenary = {
-        Enemy = "Mercenary",
-        LowestLevel = 725,
-        MaxLevel = 775
-    },
-    Swan_Pirate = {
-        Enemy = "Swan Pirate",
-        LowestLevel = 775,
-        MaxLevel = 800
-    },
-    Factory_Staff = {
-        Enemy = "Factory Staff",
-        LowestLevel = 800,
-        MaxLevel = 875
-    },
-    Marine_Lieutenant = {
-        Enemy = "Marine Lieutenant",
-        LowestLevel = 875,
-        MaxLevel = 900
-    },
-    Marine_Captain = {
-        Enemy = "Marine Captain",
-        LowestLevel = 900,
-        MaxLevel = 950
-    },
-    Zombie = {
-        Enemy = "Zombie",
-        LowestLevel = 950,
-        MaxLevel = 975
-    },
-    Vampire = {
-        Enemy = "Vampire",
-        LowestLevel = 975,
-        MaxLevel = 1000
-    },
-    Snow_Trooper = {
-        Enemy = "Snow Trooper",
-        LowestLevel = 1000,
-        MaxLevel = 1050
-    },
-    Winter_Warrior = {
-        Enemy = "Winter Warrior",
-        LowestLevel = 1050,
-        MaxLevel = 1100
-    },
-    Lab_Subordinate = {
-        Enemy = "Lab Subordinate",
-        LowestLevel = 1100,
-        MaxLevel = 1125
-    },
-    Horned_Warrior = {
-        Enemy = "Horned Warrior",
-        LowestLevel = 1125,
-        MaxLevel = 1175
-    },
-    Magma_Ninja = {
-        Enemy = "Magma Ninja",
-        LowestLevel = 1175,
-        MaxLevel = 1200
-    },
-    Lava_Pirate = {
-        Enemy = "Lava Pirate",
-        LowestLevel = 1200,
-        MaxLevel = 1250
-    },
-    Ship_Deckhand = {
-        Enemy = "Ship Deckhand",
-        LowestLevel = 1250,
-        MaxLevel = 1275
-    },
-    Ship_Engineer = {
-        Enemy = "Ship Engineer",
-        LowestLevel = 1275,
-        MaxLevel = 1300
-    },
-    Ship_Steward = {
-        Enemy = "Ship Steward",
-        LowestLevel = 1300,
-        MaxLevel = 1325
-    },
-    Ship_Officer = {
-        Enemy = "Ship Officer",
-        LowestLevel = 1325,
-        MaxLevel = 1375
-    },
-    Arctic_Warrior = {
-        Enemy = "Arctic Warrior",
-        LowestLevel = 1375,
-        MaxLevel = 1425
-    },
-    Snow_Lurker = {
-        Enemy = "Snow Lurker",
-        LowestLevel = 1375,
-        MaxLevel = 1425
-    },
-    Sea_Soldier = {
-        Enemy = "Sea Soldier",
-        LowestLevel = 1425,
-        MaxLevel = 1450
-    },
-    Water_Fighter = {
-        Enemy = "Water Fighter",
-        LowestLevel = 1450,
-        MaxLevel = 1500
-    },
-
-    
-    -- Third Sea
-
-
-    Pirate_Millionaire = {
-        Enemy = "Pirate Millionaire",
-        LowestLevel = 1500,
-        MaxLevel = 1525
-    },
-    Pistol_Billonaire = {
-        Enemy = "Pistol Billionaire",
-        LowestLevel = 1525,
-        MaxLevel = 1575
-    },
-    Dragon_Crew_Warrior = {
-        Enemy = "Dragon Crew Warrior",
-        LowestLevel = 1575,
-        MaxLevel = 1600
-    },
-    Dragon_Crew_Archer = {
-        Enemy = "Dragon Crew Archer",
-        LowestLevel = 1600,
-        MaxLevel = 1625
-    },
-    Hydra_Enforcer = {
-        Enemy = "Hydra Enforcer",
-        LowestLevel = 1625,
-        MaxLevel = 1650
-    },
-    Venomous_Assailant = {
-        Enemy = "Venomous Assailant",
-        LowestLevel = 1650,
-        MaxLevel = 1700
-    },
-    Marine_Commodore = {
-        Enemy = "Marine Commodore",
-        LowestLevel = 1700,
-        MaxLevel = 1725
-    },
-    Marine_Rear_Admiral = {
-        Enemy = "Marine Rear Admiral",
-        LowestLevel = 1725,
-        MaxLevel = 1775
-    },
-    Fishman_Raider = {
-        Enemy = "Fishman Raider",
-        LowestLevel = 1775,
-        MaxLevel = 1800
-    },
-    Fishman_Captain = {
-        Enemy = "Fishman Captain",
-        LowestLevel = 1800,
-        MaxLevel = 1825
-    },
-    Forest_Pirate = {
-        Enemy = "Forest Pirate",
-        LowestLevel = 1825,
-        MaxLevel = 1850
-    },
-    Mythological_Pirate = {
-        Enemy = "Mythological Pirate",
-        LowestLevel = 1850,
-        MaxLevel = 1900
-    },
-    Jungle_Pirate = {
-        Enemy = "Jungle Pirate",
-        LowestLevel = 1900,
-        MaxLevel = 1925
-    },
-    Musketeer_Pirate = {
-        Enemy = "Musketeer Pirate",
-        LowestLevel = 1925,
-        MaxLevel = 1975
-    },
-    Reborn_Skeleton = {
-        Enemy = "Reborn Skeleton",
-        LowestLevel = 1975,
-        MaxLevel = 2000
-    },
-    Living_Zombie = {
-        Enemy = "Living Zombie",
-        LowestLevel = 2000,
-        MaxLevel = 2025
-    },
-    Demonic_Soul = {
-        Enemy = "Demonic Soul",
-        LowestLevel = 2025,
-        MaxLevel = 2050
-    },
-    Posessed_Mummy = {
-        Enemy = "Posessed Mummy",
-        LowestLevel = 2050,
-        MaxLevel = 2075
-    },
-    Peanut_Scout = {
-        Enemy = "Peanut Scout",
-        LowestLevel = 2075,
-        MaxLevel = 2100
-    },
-    Peanut_President = {
-        Enemy = "Peanut President",
-        LowestLevel = 2100,
-        MaxLevel = 2125
-    },
-    Ice_Cream_Chef = {
-        Enemy = "Ice Cream Chef",
-        LowestLevel = 2125,
-        MaxLevel = 2150
-    },
-    Ice_Cream_Commander = {
-        Enemy = "Ice Cream Commander",
-        LowestLevel = 2150,
-        MaxLevel = 2200
-    },
-    Cookie_Crafter = {
-        Enemy = "Cookie Crafter",
-        LowestLevel = 2200,
-        MaxLevel = 2225
-    },
-    Cake_Guard = {
-        Enemy = "Cake Guard",
-        LowestLevel = 2225,
-        MaxLevel = 2250
-    },
-    Baking_Staff = {
-        Enemy = "Baking Staff",
-        LowestLevel = 2250,
-        MaxLevel = 2275
-    },
-    Head_Baker = {
-        Enemy = "Head Baker",
-        LowestLevel = 2275,
-        MaxLevel = 2300
-    },
-    Cocoa_Warrior = {
-        Enemy = "Cocoa Warrior",
-        LowestLevel = 2300,
-        MaxLevel = 2325
-    },
-    Chocolate_Bar_Battler = {
-        Enemy = "Chocolate Bar Battler",
-        LowestLevel = 2325,
-        MaxLevel = 2350
-    },
-    Sweet_Thief = {
-        Enemy = "Sweet Thief",
-        LowestLevel = 2350,
-        MaxLevel = 2375
-    },
-    Candy_Rebel = {
-        Enemy = "Candy Rebel",
-        LowestLevel = 2375,
-        MaxLevel = 2400
-    },
-    Candy_Pirate = {
-        Enemy = "Candy Pirate",
-        LowestLevel = 2400,
-        MaxLevel = 2425
-    },
-    Snow_Demon = {
-        Enemy = "Snow Demon",
-        LowestLevel = 2425,
-        MaxLevel = 2450
-    },
-    Isle_Outlaw = {
-        Enemy = "Isle Outlaw",
-        LowestLevel = 2450,
-        MaxLevel = 2475
-    },
-    Island_Boy = {
-        Enemy = "Island Boy",
-        LowestLevel = 2475,
-        MaxLevel = 2500
-	},
-    Sunkissed_Warriors = {
-        Enemy = "Sun-kissed Warriors",
-        LowestLevel = 2500,
-        MaxLevel = 2525
-    },
-    Isle_Champions = {
-        Enemy = "Isle Champion",
-        LowestLevel = 2525,
-        MaxLevel = 2550
-    },
-    Serpent_Hunter = {
-        Enemy = "Serpent Hunter",
-        LowestLevel = 2550,
-        MaxLevel = 2575
-    },
-    Skull_Slayer = {
-        Enemy = "Skull Slayer",
-        LowestLevel = 2575,
-        MaxLevel = 2600
-    },
-    Reef_Bandit = {
-        Enemy = "Reef Bandit",
-        LowestLevel = 2600,
-        MaxLevel = 2625
-    },
-    Coral_Pirate = {
-        Enemy = "Coral Pirate",
-        LowestLevel = 2625,
-        MaxLevel = 2650
-    },
-    Sea_Chanter = {
-        Enemy = "Sea Chanter",
-        LowestLevel = 2650,
-        MaxLevel = 2675
-    },
-    Ocean_Prophet = {
-        Enemy = "Ocean Prophet",
-        LowestLevel = 2675,
-        MaxLevel = 2700
-    },
-    High_Disciple = {
-        Enemy = "High Disciple",
-        LowestLevel = 2700,
-        MaxLevel = 2725
-    },
-    Grand_Devotee = {
-        Enemy = "Grand Devotee",
-        LowestLevel = 2725,
-        MaxLevel = 2800
-    }
+    Pirate_Millionaire = { Enemy = "Pirate Millionaire", LowestLevel = 1500, MaxLevel = 1525 },
+    Pistol_Billonaire = { Enemy = "Pistol Billionaire", LowestLevel = 1525, MaxLevel = 1575 },
+    Dragon_Crew_Warrior = { Enemy = "Dragon Crew Warrior", LowestLevel = 1575, MaxLevel = 1600 },
+    Dragon_Crew_Archer = { Enemy = "Dragon Crew Archer", LowestLevel = 1600, MaxLevel = 1625 },
+    Hydra_Enforcer = { Enemy = "Hydra Enforcer", LowestLevel = 1625, MaxLevel = 1650 },
+    Venomous_Assailant = { Enemy = "Venomous Assailant", LowestLevel = 1650, MaxLevel = 1700 },
+    Marine_Commodore = { Enemy = "Marine Commodore", LowestLevel = 1700, MaxLevel = 1725 },
+    Marine_Rear_Admiral = { Enemy = "Marine Rear Admiral", LowestLevel = 1725, MaxLevel = 1775 },
+    Fishman_Raider = { Enemy = "Fishman Raider", LowestLevel = 1775, MaxLevel = 1800 },
+    Fishman_Captain = { Enemy = "Fishman Captain", LowestLevel = 1800, MaxLevel = 1825 },
+    Forest_Pirate = { Enemy = "Forest Pirate", LowestLevel = 1825, MaxLevel = 1850 },
+    Mythological_Pirate = { Enemy = "Mythological Pirate", LowestLevel = 1850, MaxLevel = 1900 },
+    Jungle_Pirate = { Enemy = "Jungle Pirate", LowestLevel = 1900, MaxLevel = 1925 },
+    Musketeer_Pirate = { Enemy = "Musketeer Pirate", LowestLevel = 1925, MaxLevel = 1975 },
+    Reborn_Skeleton = { Enemy = "Reborn Skeleton", LowestLevel = 1975, MaxLevel = 2000 },
+    Living_Zombie = { Enemy = "Living Zombie", LowestLevel = 2000, MaxLevel = 2025 },
+    Demonic_Soul = { Enemy = "Demonic Soul", LowestLevel = 2025, MaxLevel = 2050 },
+    Posessed_Mummy = { Enemy = "Posessed Mummy", LowestLevel = 2050, MaxLevel = 2075 },
+    Peanut_Scout = { Enemy = "Peanut Scout", LowestLevel = 2075, MaxLevel = 2100 },
+    Peanut_President = { Enemy = "Peanut President", LowestLevel = 2100, MaxLevel = 2125 },
+    Ice_Cream_Chef = { Enemy = "Ice Cream Chef", LowestLevel = 2125, MaxLevel = 2150 },
+    Ice_Cream_Commander = { Enemy = "Ice Cream Commander", LowestLevel = 2150, MaxLevel = 2200 },
+    Cookie_Crafter = { Enemy = "Cookie Crafter", LowestLevel = 2200, MaxLevel = 2225 },
+    Cake_Guard = { Enemy = "Cake Guard", LowestLevel = 2225, MaxLevel = 2250 },
+    Baking_Staff = { Enemy = "Baking Staff", LowestLevel = 2250, MaxLevel = 2275 },
+    Head_Baker = { Enemy = "Head Baker", LowestLevel = 2275, MaxLevel = 2300 },
+    Cocoa_Warrior = { Enemy = "Cocoa Warrior", LowestLevel = 2300, MaxLevel = 2325 },
+    Chocolate_Bar_Battler = { Enemy = "Chocolate Bar Battler", LowestLevel = 2325, MaxLevel = 2350 },
+    Sweet_Thief = { Enemy = "Sweet Thief", LowestLevel = 2350, MaxLevel = 2375 },
+    Candy_Rebel = { Enemy = "Candy Rebel", LowestLevel = 2375, MaxLevel = 2400 },
+    Candy_Pirate = { Enemy = "Candy Pirate", LowestLevel = 2400, MaxLevel = 2425 },
+    Snow_Demon = { Enemy = "Snow Demon", LowestLevel = 2425, MaxLevel = 2450 },
+    Isle_Outlaw = { Enemy = "Isle Outlaw", LowestLevel = 2450, MaxLevel = 2475 },
+    Island_Boy = { Enemy = "Island Boy", LowestLevel = 2475, MaxLevel = 2500 },
+    Sunkissed_Warriors = { Enemy = "Sun-kissed Warrior", LowestLevel = 2500, MaxLevel = 2525 },
+    Isle_Champions = { Enemy = "Isle Champion", LowestLevel = 2525, MaxLevel = 2550 },
+    Serpent_Hunter = { Enemy = "Serpent Hunter", LowestLevel = 2550, MaxLevel = 2575 },
+    Skull_Slayer = { Enemy = "Skull Slayer", LowestLevel = 2575, MaxLevel = 2600 },
+    Reef_Bandit = { Enemy = "Reef Bandit", LowestLevel = 2600, MaxLevel = 2625 },
+    Coral_Pirate = { Enemy = "Coral Pirate", LowestLevel = 2625, MaxLevel = 2650 },
+    Sea_Chanter = { Enemy = "Sea Chanter", LowestLevel = 2650, MaxLevel = 2675 },
+    Ocean_Prophet = { Enemy = "Ocean Prophet", LowestLevel = 2675, MaxLevel = 2700 },
+    High_Disciple = { Enemy = "High Disciple", LowestLevel = 2700, MaxLevel = 2725 },
+    Grand_Devotee = { Enemy = "Grand Devotee", LowestLevel = 2725, MaxLevel = 2800 }
 }
 
 QuestsData.Quests = Quests
@@ -1341,32 +956,30 @@ function QuestsData.getQuest(Enemy)
 end
 
 function QuestsData.CheckForQuest(Enemy)
-	if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible then
-		if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title:find(Enemy) then
+    local questGui = game:GetService("Players").LocalPlayer.PlayerGui.Main:FindFirstChild("Quest")
+    if questGui and questGui.Visible then
+        local title = questGui.Container.QuestTitle:FindFirstChild("Title")
+        if title and title.Text:find(Enemy, 1, true) then
             return true
         end
-	end
-
-	return false
+    end
+    return false
 end
 
 function QuestsData.GetPlayerLevel()
     local Players = game:GetService("Players")
     local plr = Players.LocalPlayer
     if not plr then
-        warn("GetPlayerLevel: LocalPlayer отсутствует.")
         return nil
     end
 
     local ok, data = pcall(function() return plr:FindFirstChild("Data") or plr:WaitForChild("Data", 5) end)
     if not ok or not data then
-        warn("GetPlayerLevel: не удалось получить 'Data' у игрока.")
         return nil
     end
 
     local ok2, lvlObj = pcall(function() return data:FindFirstChild("Level") or data:WaitForChild("Level", 5) end)
     if not ok2 or not lvlObj then
-        warn("GetPlayerLevel: не удалось получить 'Level' в Data.")
         return nil
     end
 
@@ -1377,40 +990,33 @@ function QuestsData.GetPlayerLevel()
     return tonumber(lvlObj)
 end
 
-
-
 function QuestsData.CalculateLevel(Level)
     local lvl = tonumber(Level)
 
     if not lvl then
         lvl = QuestsData.GetPlayerLevel()
         if not lvl then
-            warn("CalculateLevel: передан некорректный уровень и уровень игрока не доступен. Level arg:", tostring(Level))
             return nil
         end
     end
 
+    local bestMatch = nil
+    local highestLow = -1
+
     for key, v in pairs(Levels) do
         if type(v) == "table" then
             local low = tonumber(v.LowestLevel)
-            local max = tonumber(v.MaxLevel)
-
-            if low == nil or max == nil then
-                warn("CalculateLevel: пропущена граница в Levels[" .. tostring(key) .. "]: lowest=" .. tostring(v.LowestLevel) .. " max=" .. tostring(v.MaxLevel))
-            else
-                if lvl >= (low + 0.1) and lvl <= (max + 0.1) then
-                    return v.Enemy
+            if low and lvl >= low then
+                if low > highestLow then
+                    highestLow = low
+                    bestMatch = v.Enemy
                 end
             end
-        else
-            warn("CalculateLevel: ожидается таблица в Levels[" .. tostring(key) .. "], но получено: " .. tostring(v))
         end
     end
 
-    return nil
+    return bestMatch
 end
-
-
 
 local FirstSea = {}
 local SecondSea = {}
@@ -1429,6 +1035,5 @@ end
 QuestsData.FirstSea = FirstSea
 QuestsData.SecondSea = SecondSea
 QuestsData.ThirdSea = ThirdSea
-
 
 return QuestsData
