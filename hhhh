@@ -1,4 +1,4 @@
---yomkamadeit 111222
+--yomkamadeit 1
 local QuestsData = {}
 
 local Quests = {
@@ -487,7 +487,7 @@ local Quests = {
     },
     Hydra_Enforcer = {
         Enemy = "Hydra Enforcer [Lv. 1625]",
-        QuestName = "AmazonQuest2",
+        QuestName = "VenomCrewQuest",
         EnemyName = "Hydra Enforcer",
         LevelQuest = 1,
         CFramePos = CFrame.new(5214.87, 1004.11, 761.66),
@@ -496,7 +496,7 @@ local Quests = {
     },
     Venomous_Assailant = {
         Enemy = "Venomous Assailant [Lv. 1650]",
-        QuestName = "AmazonQuest2",
+        QuestName = "VenomCrewQuest",
         EnemyName = "Venomous Assailant",
         LevelQuest = 2,
         CFramePos = CFrame.new(5214.87, 1004.11, 761.66),
