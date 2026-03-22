@@ -933,7 +933,7 @@ local Levels = {
     Snow_Demon = {Enemy = "Snow Demon", LowestLevel = 2425, MaxLevel = 2450},
     Isle_Outlaw = {Enemy = "Isle Outlaw", LowestLevel = 2450, MaxLevel = 2475},
     Island_Boy = {Enemy = "Island Boy", LowestLevel = 2475, MaxLevel = 2500},
-    Sunkissed_Warrior = {Enemy = "Sun-kissed Warrior", LowestLevel = 2500, MaxLevel = 2525},
+    Sunkissed_Warrior = {Enemy = "Sunkissed Warrior", LowestLevel = 2500, MaxLevel = 2525},
     Isle_Champion = {Enemy = "Isle Champion", LowestLevel = 2525, MaxLevel = 2550},
     Serpent_Hunter = {Enemy = "Serpent Hunter", LowestLevel = 2550, MaxLevel = 2575},
     Skull_Slayer = {Enemy = "Skull Slayer", LowestLevel = 2575, MaxLevel = 2600},
