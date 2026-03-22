@@ -756,7 +756,7 @@ local Quests = {
         World = 3
     },
     Sunkissed_Warrior = {
-        Enemy = "Sun-kissed Warrior [Lv. 2500]",
+        Enemy = "Sunkissed Warrior [Lv. 2500]",
         QuestName = "TikiQuest2",
         EnemyName = "Sunkissed Warrior",
         LevelQuest = 1,
